@@ -1,0 +1,125 @@
+html, body {
+  margin: 0px;
+  height: 100vh;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px 10px;
+}
+
+main form label:not([for="comm"]) {
+  width: 100px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+main form > div {
+  width: 50%;
+}
+
+main form > div + div {
+  margin-left: 1em;
+}
+
+main div > p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main div:first-of-type p:first-of-type, main div:first-of-type p:last-of-type {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main div:first-of-type p:last-of-type {
+  margin: 0px;
+}
+
+main form input, main form textarea {
+  padding: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main form input:not([type=submit]) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main form input[type=submit] {
+  color: white;
+  background-color: #333;
+  border: none;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+main form input[type=submit]:hover {
+  cursor: pointer;
+}
+
+main div + div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+main div {
+  border: 1px solid #adabab;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+  main form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main form p {
+    display: block;
+  }
+  main form > div {
+    width: auto;
+  }
+  main form > div + div {
+    margin-left: 0;
+    margin-bottom: 1em;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
